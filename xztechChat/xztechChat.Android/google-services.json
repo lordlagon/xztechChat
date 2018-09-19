@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "450588256595",
+    "firebase_url": "https://chatxz-fda5b.firebaseio.com",
+    "project_id": "chatxz-fda5b",
+    "storage_bucket": "chatxz-fda5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450588256595:android:ff932f7c5462f989",
+        "android_client_info": {
+          "package_name": "com.xztech.chatxz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450588256595-1jo1cd44k70a1rlmr8cs757ir6if1qsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoPk9BLVEsHQaXHuY7NPDrnSyV_N8PMe0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
