@@ -4,6 +4,8 @@ using Android.OS;
 using Prism;
 using Prism.Ioc;
 
+
+
 namespace xztechChat.Droid
 {
     [Activity(Label = "xztechChat", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

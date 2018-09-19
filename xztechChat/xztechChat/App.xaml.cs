@@ -5,6 +5,10 @@ using xztechChat.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Prism.DryIoc;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Prism.Navigation;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace xztechChat
@@ -22,15 +26,19 @@ namespace xztechChat
 
         protected override async void OnInitialized()
         {
+            AppCenter.Start("android=b4a264e6-db14-46cb-8aee-c7de862ee380;" + 
+                "uwp={Your UWP App secret here};" + 
+                "ios={Your iOS App secret here}", 
+                typeof(Analytics), typeof(Crashes));
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("MainPage", null, true, true);
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
         }
     }
 }
